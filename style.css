@@ -1,0 +1,125 @@
+body {
+    background-color: rgb(0, 0, 0);
+    overflow: hidden;
+}
+
+.evaVideo {
+    position: fixed;
+    left: 50%;
+    bottom: 0;
+    transform: translateX(-50%);
+    max-width: 100%;
+    max-height: 100%;
+    animation: videoStartAnimation 6s;
+}
+
+@keyframes videoStartAnimation {
+    from{opacity: 0;}
+    to{opacity: 1;}
+}
+
+.evaSmallVideo {
+    position: fixed;
+    left: 0;
+    bottom: 50%;
+    transform: translateY(50%);
+    max-width: 40%;
+    max-height: 100%;
+    animation: videoSmallAnimation 3s;
+}
+
+@keyframes videoSmallAnimation {
+    from{
+        position: fixed;
+        left: 50%;
+        bottom: 0;
+        transform: translateX(-50%);
+        max-width: 100%;
+        max-height: 100%;
+    }
+    to{
+        position: fixed;
+        left: 0;
+        bottom: 50%;
+        transform: translateY(50%);
+        max-width: 40%;
+        max-height: 100%;
+    }
+}
+
+.evaBigVideo {
+    position: fixed;
+    left: 50%;
+    bottom: 0;
+    transform: translateX(-50%);
+    max-width: 100%;
+    max-height: 100%;
+    animation: videoBigAnimation 3s;
+}
+
+@keyframes videoBigAnimation {
+    from{
+        position: fixed;
+        left: 0;
+        bottom: 0;
+        transform: translateX(0%);
+        max-width: 40%;
+        max-height: 100%; 
+    }
+    to{
+        position: fixed;
+        left: 50%;
+        bottom: 0;
+        transform: translateX(-50%);
+        max-width: 100%;
+        max-height: 100%;
+    }
+}
+
+#map {
+    position: fixed;
+    left: 40%;
+    bottom: 0;
+    /* top: 50%;
+    transform: translateY(-50%);
+    box-shadow: -1px -1px 47px 29px rgba(43,175,202,0.75);
+    border-radius: 100%; */
+}
+
+.mapAnim {
+    animation: videoStartAnimation 7s;
+}
+
+.menu {
+    position: absolute;
+    left: 50%;
+    bottom: 30%;
+    transform: translateX(-50%);
+    text-align: center;    
+}
+
+.button {
+    text-shadow: 0px 0px 20px rgb(255, 0, 0);
+    font-size: 40px;
+    font-family: fantasy;
+    color: white;
+    text-decoration: none;
+}
+
+.button:hover {
+    cursor: pointer;
+    color: rgb(248, 3, 3);
+}
+
+.title {
+    position: absolute;
+    left: 50%;
+    top: 5%;
+    transform: translateX(-50%);
+    padding: 15px 40px 15px 40px;
+    border-radius: 10px;
+    color: rgb(247, 15, 15);
+    font-size: 100px;
+    text-shadow: 7px 7px 15px rgb(248, 252, 252);
+    font-family: fantasy;
+}
